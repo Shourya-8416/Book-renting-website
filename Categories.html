@@ -1,0 +1,879 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style type="text/css">
+      body{
+        background-image: url("wall4.jpeg");
+        background-size: cover;
+      }
+      header{
+      position: absolute;
+          top: 0;left: 0;right: 0;
+          background: #fff;
+          padding: 2 rem 9%;
+          width: auto;
+          align-items: center;
+          justify-content: space-between;
+          box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+          z-index: 1000;
+          
+          
+    }
+    .carousel-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /* Add styling for individual carousel items */
+    .carousel-item {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .navbar{
+      background: black;
+      font-family: calibri;
+      padding-right: 25px;
+      padding-left: 25px;
+      width: 100%;
+      background-image: linear-gradient(#033747,#012733);
+      text-align:right;
+      position: absolute;
+    }
+    .navdiv{
+      display: flex;
+      text-align: right;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 50px; 
+      height: 50px;
+    }
+    .navbar a{
+      font-size: 20px;
+      padding: 0 1.5rem;
+      color: white;
+      text-align: right;
+    }
+    .navbar a:hover {
+      color: yellow ;
+
+    }
+   .navbar button {
+            width: 140px;
+            height: 35px; /* Adjust the height as per your preference */
+            border-radius: 40px;
+            border: none;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:10px 0; /* Add negative margins to reduce height without affecting div size */
+        }
+
+        .navbar button a {
+           display: block;
+           padding: 5px 10px; /* Adjust the padding as per your preference */
+           color: white;
+           text-decoration: none;
+           line-height: 30px; /* Adjust the line-height to vertically center the text */
+        }
+
+        .heading{
+      text-align: center;
+      font-size: 4rem;
+      color:black;
+      padding: 1rem;
+      margin: 4rem 0;
+      background: rgba(255, 51, 153, .05);
+      margin-left: 50px;
+      text-align: left;
+      width: 100%;
+    }
+      
+      .body{
+        margin: 0;
+        font-family: sans-serif;
+        background: brown;
+      }
+      .h3{
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding-top: 10px;
+      }
+      .a{
+        text-decoration: none;
+      }
+      .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+      }
+      .content{
+        width: 20%;
+        margin: 15px;
+        box-sizing: border-box;
+        float: left;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        padding-top: 10px;
+        margin-top: 6rem 0;
+        box-shadow: 0 14px 28px rgba(0, 0, 0,0.25),0 10px 10px rgba(0, 0, 0,0.22);
+        transition: .4s;
+        background:grey;
+      }
+      .content:hover{
+        box-shadow: 0 3px 6px rgba(0, 0, 0,0.16),0 3px 6px rgba(0, 0, 0,0.23);
+        transform: translate(0px , -8px);
+      }
+      .img{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-top: 6rem;
+      }
+      p{
+        text-align: center;
+        color: white;
+        padding-top: 0 8px;
+      }
+      h6{
+        font-size: 26px;
+        text-align: center;
+        color: black;
+        margin: 0;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+      }
+      .li{
+        padding-top: 5px;
+      }
+      .fa{
+        font-size: 26px;
+        transition: .4s;
+        margin: 3px;
+      }
+      .checked{
+        color: red;
+      }
+      .fa:hover{
+        transition: .6s;
+        transform: scale(1.3);
+      }
+      button{
+        text-align: center;
+        font-size: 24px;
+        color:white;
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        margin-top: 5px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px ;
+      }
+      .dropdown{
+        align-items: left;
+        position: absolute;
+        margin-right: 1350px;
+        display: inline-block;
+        width: 100px;
+      }
+      .buy-1{
+        background: black;
+      }
+      .buy-2{
+        background: black;
+      }
+      .buy-3{
+        background:black;
+      }
+      .buy-4{
+        background: black;
+      }
+      .buy-5{
+        background: black;
+      }
+      .buy-6{
+        background: black;
+      }
+      .buy-7{
+        background: black;
+      }
+      .buy-8{
+        background: black;
+      }
+      html body{
+        overflow-x: hidden;
+      }
+       
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:#033747;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+            min-width: 200px;
+            margin-left: 80px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .category-link {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+        }
+
+        .category-link:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-content a {
+            display:table;
+            text-decoration: none;
+            color:white;
+            padding: 5px;
+            text-align: centre; /* Align the text to the left */
+            line-height: 1.5; /* Adjust the line height for vertical centering */
+        }
+        .my-wishlist{
+           align-items: left;
+           position: absolute;
+           margin-right: 1250px;
+        }
+      
+
+
+    </style>
+  </head>
+  <body>  
+    <header>
+    
+    <nav class="navbar">
+      <div class="navdiv">
+          <a href="Home.html">Home</a>
+          <a href="Categories.html">Categories</a>
+          <a href="review.html">Review</a>
+          <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:25px;color:white;"></i></a>
+          <button><a href="Login.html">Register/Login</a></button>
+         
+          <div class="dropdown">
+         <i class="fa fa-bars" style="font-size:25px;color:white;"></i>
+        
+          <div class="dropdown-content">
+            <a href="#">Fiction</a>
+            <a href="#">Science Fiction</a>
+            <a href="#">Fantasy</a>
+            <a href="#">Mystery</a>
+            <a href="#">Romance</a>
+            <a href="#">Thriller</a>
+            <a href="#">Horror</a>
+            <a href="#">Non-Fiction</a>
+            <a href="#">Biography</a>
+            <a href="#">Self-Help</a>
+            <a href="#">Historical Fiction</a>
+            <a href="#">Young Adult</a>
+            <a href="#">Children's Books</a>
+            <a href="#">Science</a>
+            <a href="#">Poetry</a>
+            <a href="#">Drama</a>
+            <a href="#">Adventure</a>
+            <a href="#">Comics</a>
+            <a href="#">Graphic Novels</a>
+            <a href="#">Cooking</a>
+            <a href="#">Travel</a>
+            <a href="#">History</a>
+            <a href="#">Art</a>
+            <a href="#">Philosophy</a>
+            <a href="#">Religion</a>
+            <a href="#">Technology</a>
+            <a href="#">Business</a>
+            <a href="#">Economics</a>
+         </div>
+         </div>
+         <div class="my-wishlist"> <a href="wishlist.html"><i class="fa-sharp fa-solid fa-heart"></i></a></div>
+         
+      </div>
+    </nav>
+  </header>
+  <section>
+    <h1 class="heading"> TRENDING <span> BOOKS </h1>
+    <div class="box-container biography-carousel"> </div>
+    <center><div class="gallery">
+
+      <div class="content">
+        <center><img src="T1.jpg" width="200px" height="350px"></center>
+        <h3>Love Ugly</h3>
+        
+        <h6>$41.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="T2.webp" width="200px" height="350px"></center>
+        <h3> Seven Husbands of Evelyn Hugo</h3>
+        
+        <h6>$35.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="T3.jpeg" width="200px" height="350px"></center>
+        <h3>Six of Crows</h3>
+        
+        <h6>$48.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="T4.jpg" width="200px" height="350px"></center>
+        <h3>The Sacred Well Murders</h3>
+        
+        <h6>$50.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+        <div class="content">
+        <center><img src="FIC1.webp" width="220px" height="350px"></center>
+        <h3>The Kite Runner</h3>
+        
+        <h6>$41.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      
+
+
+      <div class="content">
+        <center><img src="FIC2.png" width="220px" height="350px"></center>
+        <h3>Kim Harrison</h3>
+        
+        <h6>$26.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-2"> ADD TO CART </button>
+      </div>
+
+
+
+
+      <div class="content">
+        <center><img src="FIC3.jpg" width="220px" height="350px"></center>
+        <h3>The Lioness</h3>
+        
+        <h6>$45.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-3"> ADD TO CART </button>
+      </div>
+
+
+
+
+      <div class="content">
+        <center><img src="FIC4.jpg" width="220px" height="350px"></center>
+        <h3>Bridgerton</h3>
+        
+        <h6>$60.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-4"> ADD TO CART </button>
+      </div>
+
+      
+
+      
+    </div>
+
+</section>
+<section>
+  <h1 class="heading">FICTIONAL <span> BOOKS </h1>
+    <div class="box-container biography-carousel"> </div>
+    <center><div class="gallery">
+
+
+      <div class="content">
+        <center><img src="FIC1.webp" width="220px" height="350px"></center>
+        <h3>The Kite Runner</h3>
+        
+        <h6>$41.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      
+
+
+      <div class="content">
+        <center><img src="FIC2.png" width="220px" height="350px"></center>
+        <h3>Kim Harrison</h3>
+        
+        <h6>$26.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-2"> ADD TO CART </button>
+      </div>
+
+
+
+
+      <div class="content">
+        <center><img src="FIC3.jpg" width="220px" height="350px"></center>
+        <h3>The Lioness</h3>
+        
+        <h6>$45.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-3"> ADD TO CART </button>
+      </div>
+
+
+
+
+      <div class="content">
+        <center><img src="FIC4.jpg" width="220px" height="350px"></center>
+        <h3>Bridgerton</h3>
+        
+        <h6>$60.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-4"> ADD TO CART </button>
+      </div>
+
+      
+
+
+      <div class="content">
+        <center><img src="FIC5.jpg" width="220px" height="350px"></center>
+        <h3>Fallen</h3>
+        
+        <h6>$35.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-5"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="FIC6.jpg" width="220px" height="350px"></center>
+        <h3>Alpha Wolf</h3>
+        
+        <h6>$25.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-5"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="FIC7.jpeg" width="220px" height="350px"></center>
+        <h3>The Lost World</h3>
+        
+        <h6>$25.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-5"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="FIC8.jpeg" width="220px" height="350px"></center>
+        <h3>Harry Potter</h3>
+        
+        <h6>$25.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-5"> ADD TO CART </button>
+      </div>
+    </div>
+  </center>
+</section>
+
+    <section>
+  <h1 class="heading">BIOGRAPHY <span> BOOKS </h1>
+    <div class="box-container biography-carousel"> </div>
+    <center><div class="gallery">
+
+
+      <div class="content">
+        <center><img src="i5.jpeg" width="220px" height="350px"></center>
+        <h3>Albert Einstein</h3>
+        
+        <h6>$26.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      
+
+
+      <div class="content">
+        <center><img src="i12.jpeg" width="220px" height="350px"></center>
+        <h3> Jon Meacham</h3>
+       
+        <h6>$32.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-2"> ADD TO CART </button>
+      </div>
+
+
+
+
+      <div class="content">
+        <center><img src="Bio1.webp" width="220px" height="350px"></center>
+        <h3>APJ Abdul Kalam</h3>
+    
+        <h6>$28.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-3"> ADD TO CART </button>
+      </div>
+
+
+
+
+      <div class="content">
+        <center><img src="i13.jpeg" width="220px" height="350px"></center>
+        <h3>Gandhi</h3>
+       
+        <h6>$54.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-4"> ADD TO CART </button>
+      </div>
+
+      
+
+
+      <div class="content">
+        <center><img src="Bio2.jpeg" width="220px" height="350px"></center>
+        <h3>Queen</h3>
+        
+        <h6>$45.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star "></i></li>
+          <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-5"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="Bio3.jpeg" width="220px" height="350px"></center>
+        <h3>Jefferson Daughter</h3>
+       
+        <h6>$68.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-6"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="BIO4.jpg" width="220px" height="350px"></center>
+        <h3>Bill Gates</h3>
+      
+        <h6>$36.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-7"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="Bio5.jpg" width="220px" height="350px"></center>
+        <h3>Malala</h3>
+        
+        <h6>$43.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-8"> ADD TO CART </button>
+      </div>
+  </section>
+
+  <section class="Products" id="Products">
+    <h1 class="heading">MEDICAL <span>BOOKS</h1>
+    </section>
+    <center><div class="gallery">
+
+
+      <div class="content">
+        <center><img src="MED8.jpeg" width="220px" height="350px"></center>
+        <h3>Microbes and Disease</h3>
+       
+        <h6>$40.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-1"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="MED1.jpg" width="220px" height="350px"></center>
+        <h3>Metabolical</h3>
+    
+        <h6>$45.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-2"> ADD TO CART </button>
+
+      </div>
+
+      <div class="content">
+        <center><img src="MED2.jpg" width="220px" height="350px"></center>
+        <h3>Biochemistry</h3>
+    
+        <h6>$25.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-3"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="MED3.jpg" width="220px" height="350px"></center>
+        <h3>Physiology</h3>
+        <h6>$35.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-4"> ADD TO CART </button>
+      </div>
+
+      <div class="content">
+        <center><img src="MED4.jpg" width="220px" height="350px"></center>
+        <h3>Pharmacology</h3>
+        <h6>$50.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-3"> ADD TO CART </button>
+
+      </div>
+
+      <div class="content">
+        <center><img src="MED5.webp" width="220px" height="350px"></center>
+        <h3>Medicinal</h3>
+        <h6>$40.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="buy-4"> ADD TO CART </button>
+
+      </div>
+
+      <div class="content">
+        <center><img src="MED7.jpg" width="200px" height="350px"></center>
+        <h3>Embroyology</h3>
+   
+        <h6>30.00</h6>
+        <ul>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star checked"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-5"> ADD TO CART </button>
+
+      </div></center>
+
+
+
+
+
+    </div>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    // Initialize the carousel for each gallery
+    $('.gallery').slick({
+      infinite: true,
+      slidesToShow: 5, // Adjust the number of slides to show at once
+      slidesToScroll: 5, // Adjust the number of slides to scroll
+      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slick-next">Next</button>',
+    });
+  </script>
+
+  
+
+
+
+  </body>
+</html>

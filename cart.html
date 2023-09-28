@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Your Cart - Books Rental</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-top:50px;
+            padding: 20px;
+            height: 600px;
+            position: st;
+           
+        }
+
+        /* Header styles */
+        header{
+            position: absolute;
+            top: 0;left: 0;right: 0;
+            background: #fff;
+            padding: 2 rem 9%;
+            width: auto;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            z-index: 1000;
+            
+            
+        }
+
+        /* Cart item styles */
+        .cart-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .cart-item img {
+            max-width: 80px;
+            margin-right: 20px;
+        }
+
+        .item-details {
+            padding-left: 70%;
+            flex: 1;
+        }
+
+        /* Cart total styles */
+        .cart-total {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 350px;
+            background-color: yellowgreen;
+            height: 70px;
+            position: static;
+           
+        }
+
+        .cart-total h2 {
+            font-size: 24px;
+            color: #e74c3c;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        /* Checkout button styles */
+        .btn-checkout {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 35px;
+            margin-right: 20px;
+          
+
+        }
+
+        .btn-checkout:hover {
+            background-color: #c0392b;
+        } 
+        .web-logo{
+            position: absolute;
+            margin-right: 1000px;
+            border-radius: 40px;
+            background-color: linear-gradient(#033747,#012733);;
+        }
+        .btn-checkout{
+            color: yellow;
+        }
+        .btn-remove{
+            background-color: red;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .my-cart{
+            background-color: yellowgreen;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .footer{
+            height: 200px;
+            margin-bottom: 0px;
+        }
+       //*html body{
+            overflow-y: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <div class="navdiv">
+               <div class="search-container">
+                <input type="search" placeholder="Type to search..." >
+                <div class="search-btn">
+                <i class="fas fa-search"></i>   
+                </div>
+                
+           </div>
+            <div class="logo"><a href="#"></a></div>
+             <img class="web-logo" src="Logo.jpg" height="45px" width="30%">
+             <a href="Home.html">Home</a>
+              <a href="Categories.html">Categories</a>
+              <a href="review.html">Review</a>
+              <a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+               <button><a href="Login.html">Register/Login</a></button>
+                </div>
+            
+        </nav>
+        
+    </header>
+    <div>
+        
+    </div>
+    <div class="container">
+        <div class="my-cart">
+            <h2>My Cart</h2>
+        </div>
+        <p> </p>
+        <div class="cart-item">
+            <img src="FIC5.jpg" alt="Book 1">
+            <div class="item-details">
+                <h2>Fallen</h2>
+                <p>Author:Madhuri Tamse</p>
+                <p>Price: $35.00</p>
+                <p>Quantity: 1</p>
+                <button class="btn-remove">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="FIC4.jpg" alt="Book 1">
+            <div class="item-details">
+                <h2>Bridgerton</h2>
+                <p>Author: Jill Barnett</p>
+                <p>Price: $60.00</p>
+                <p>Quantity: 1</p>
+                <button class="btn-remove">Remove</button>
+            </div>
+        </div> <div class="cart-item">
+            <img src="i13.jpeg" alt="Book 1">
+            <div class="item-details">
+                <h2>Mohandas K. Gandhi</h2>
+                
+                <p>Price: $54.00</p>
+                <p>Quantity: 1</p>
+                <button class="btn-remove">Remove</button>
+            </div>
+        </div> <div class="cart-item">
+            <img src="H1.webp" alt="Book 1">
+            <div class="item-details">
+                <h2>World War 1</h2>
+                <p>Author: Henry Freeman</p>
+                <p>Price: $36.66</p>
+                <p>Quantity: 1</p>
+                <button class="btn-remove">Remove</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h2>Total: $185.66</h2>
+            <button class="btn-checkout"><a href="payment.html" style="color: white;">Proceed to Checkout</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

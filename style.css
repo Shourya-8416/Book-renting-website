@@ -1,0 +1,275 @@
+.logo{
+			
+			color: black;
+			font-weight: bolder;
+
+		}
+		
+		.navbar{
+			background: black;
+			font-family: calibri;
+			padding-right: 25px;
+			padding-left: 25px;
+			width: 100%;
+			background-image: linear-gradient(#033747,#012733);
+			text-align:right;
+			position: absolute;
+			
+		}
+		.navdiv{
+			display: flex;
+			text-align: right;
+			align-items: center;
+			justify-content: flex-end;
+			padding-right: 50px; 
+			height: 65px;
+		}
+		.logo a{
+			font-size: 40px;
+			font-weight: 600;
+			width: 100%;
+			text-align: right;
+		}
+		.navbar a{
+			font-size: 20px;
+			padding: 0 1.5rem;
+			color: white;
+			text-align: right;
+		}
+		.navbar a:hover{
+			color:yellow;
+
+		}
+		.navbar button {
+            width: 150 px;
+            height: 35px; /* Adjust the height as per your preference */
+            border-radius: 40px;
+            border: none;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:10px 0; /* Add negative margins to reduce height without affecting div size */
+        }
+
+        .navbar button a {
+           display: block;
+           padding: 5px 10px; /* Adjust the padding as per your preference */
+           color: white;
+           text-decoration: none;
+           line-height: 30px; /* Adjust the line-height to vertically center the text */
+        }
+
+		
+		.section{
+			padding: 2rem 9%;
+		}
+		.home{
+			
+			
+			min-height: 50%;
+			background-image: url(book1.jpg);
+			background-size:cover;
+			animation: slider 9s infinite linear;
+		}
+		@keyframes slider{
+			0%{background-image: url(book1.jpg);}
+			35%{background-image: url(new.jpeg); }
+			75%{background-image: url(b2.jpeg);}
+		}
+		.content{
+			max-width: 10rem;
+			
+		}
+		.content h3{
+			font-size: 7rem;
+			color:palegoldenrod;
+            margin-left: 200px;
+            margin-top: 65px;
+		}
+		.content h5{
+			font-size: 3rem;
+			color: white;
+			line-height: 1.5;
+			padding: 1rem 0;
+			margin-left: 200px;
+		}
+		.heading{
+			text-align: center;
+			font-size: 4rem;
+			color: brown;
+			padding: 1rem;
+			margin: 2rem 0;
+			background: rgba(255, 51, 153, .05);
+			background-image: linear-gradient(#033747,#012733);
+		}
+		.btn{
+			display: inline-block;
+			margin-top: 1rem;
+			border-radius: 5rem;
+			background-color:grey;
+			color: black;
+			padding: .9rem 3.5rem;
+			cursor: pointer;
+			font-size: 1.7rem;
+			margin-left: 200px;
+			margin-bottom: 200px;
+		}
+		.btn:hover{
+			background: lightpink;
+		}
+		.box-container{
+			display:flex;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			overflow-x: auto;
+			align-items: center;
+		}
+		.box-container .box{
+			
+			box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+			border-radius: .5rem;
+			border: .1rem solid rgba(0, 0, 0, .1);
+			position: relative;
+			transition: 1s;
+			align-items: center;
+
+		}
+		.background-image{
+			position: relative;
+			text-align: center;
+			padding-top: 2rem;
+			overflow: hidden;
+			display: flex;
+		}
+		.box img{
+			height: 25 rem;
+			display:flex;
+			border-radius: 5px;
+		}
+		.container{
+			max-width: 1170px;
+			
+			margin: auto;
+		}
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		ul{
+			list-style: none;
+		}
+		.footer{
+			color: black;
+			padding: 70px 0;
+			background-image:linear-gradient(#033747,#012733);
+		}
+		.footer-col{
+			width: 25%;
+			padding: 0 15px;
+		}
+		.footer-col h4{
+			font-size: 18px;
+			text-transform: capitalize;
+			margin-bottom: 30px;
+			color: white;
+		}
+		.footer-col ul li a{
+			color: white;
+		}
+		.footer-col ul li a:hover{
+			color: red;
+
+		}
+		.box h5:hover{
+			transform:scale(1.8);
+			z-index: 2;
+		}
+		.footer-col .social-links a{
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			margin: 0 10px 10px 0;
+			text-align: center;
+			line-height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+		}
+		.footer a{
+			color: white;
+		}
+		<!-- Inside the <style> tag -->
+
+
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+         html, body {
+            overflow-x: hidden;
+
+		}
+		.featured-carousel{
+			overflow-x: hidden;
+		}
+		.biography-carousel{
+			  overflow-x: hidden;
+
+		}
+		.search-container{
+		 position: relative;
+		 height: 40px;
+		 width: 300px;	
+		}
+
+		.search-container input{
+			height: 100%;
+			width: 100%;
+			border: none;
+			outline: none;
+			background: #fff;
+			font-size: 18px;
+			border-radius: 50px;
+			padding: 0 60px 0 20px;
+		}
+		.search-container .search-btn{
+			   position: absolute;
+            top: 45%;
+            right: 5px;
+            transform: translateY(-15px);
+            height:34px;
+			   width: 34px;
+            color: black;
+            background:white;
+            line-height: 50px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 50px;
+            cursor: pointer;
+
+      }
+      .search-btn{
+      	position: absolute;
+      }
+		input {
+			background-color: white;
+			background: transparent;
+			border: 0px;
+			outline: 0px;
+			width: 140px;
+		}
+		.web-logo{
+			position: absolute;
+			margin-right: 1000px;
+			border-radius: 40px;
+			background-color: linear-gradient(#033747,#012733);;
+		}
+		.icon-search{
+			color: yellowgreen;
+			position:inline-block;
+			margin: 0 0 10px 15px;
+		}
+		
